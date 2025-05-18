@@ -14,7 +14,7 @@ function App() {
     setAdvice('')
 
     try{
-      const res=await fetch("http://localhost:5000/api/advicegen",{
+      const res=await fetch("https://blabasaur-backend.onrender.com/api/advicegen",{
         method:"POST",
         headers:{
           'Content-Type':'application/json'
