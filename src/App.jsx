@@ -38,8 +38,8 @@ function App() {
       <div className="w-full max-w-4xl mx-auto mb-6 sm:mb-10 lg:mb-16 px-2">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <img 
-            // src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" 
-            src="../1.png"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" 
+            // src="../1.png"
             alt="Blabasaur Logo" 
             className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 object-contain filter drop-shadow-[0_0_8px_rgba(168,85,247,0.5)] transform hover:scale-105 transition-transform duration-300"
           />
