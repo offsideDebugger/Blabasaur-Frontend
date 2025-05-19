@@ -8,6 +8,8 @@ function App() {
   const [question,setQuestion]=useState("")
   const [loading,setLoading]=useState(false)
 
+
+  //function to fetch data from backend
   const getAdvice=async ()=>{
     if(!question.trim()) return;
     setLoading(true)
@@ -23,7 +25,7 @@ function App() {
       });
 
       const data=await res.json();
-      console.log(data)
+      
       setAdvice(data.oneLine)
     }catch(e){
       setAdvice("Your question caused the AI to require therapy.Try again later.");
@@ -31,6 +33,8 @@ function App() {
     setLoading(false);
   }
 
+
+  //whole mess of componenets
   return (
     <>
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-gray-100 flex flex-col items-center px-3 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12">
