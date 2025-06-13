@@ -16,7 +16,7 @@ function App() {
     setAdvice('')
 
     try{
-      const res=await fetch("https://gonelink-backend-production.up.railway.app/api/advicegen",{
+      const res=await fetch("https://incomparable-pony-392ba6.netlify.app/api/advicegen",{
         method:"POST",
         headers:{
           'Content-Type':'application/json'
